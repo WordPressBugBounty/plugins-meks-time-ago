@@ -3,7 +3,7 @@
 Plugin Name: Meks Time Ago
 Plugin URI: https://mekshq.com
 Description: Automatically change your post date display to "time ago" format like "1 hour ago", "3 weeks ago", "2 months ago" etc...
-Version: 1.1.7
+Version: 1.1.8
 Author: Meks
 Author URI: https://mekshq.com
 Text Domain: meks-time-ago
@@ -25,7 +25,7 @@ if ( !defined( 'MEKS_TA_PATH' ) )
 	define( 'MEKS_TA_PATH', plugin_dir_path( __FILE__ ) );
 
 /* Define internal version for possible update changes */
-define( 'MEKS_TA_VER', '1.1.7' );
+define( 'MEKS_TA_VER', '1.1.8' );
 
 /* Load Up the text domain */
 function meks_ta_load_textdomain() {

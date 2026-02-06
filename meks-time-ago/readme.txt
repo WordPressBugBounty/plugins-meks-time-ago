@@ -3,8 +3,8 @@ Contributors: mekshq, seebeen
 Donate link: https://mekshq.com/
 Tags: date, time, ago, custom, format, post, page, the_date, the_time
 Requires at least: 3.7
-Tested up to: 6.6
-Stable tag: 1.1.7
+Tested up to: 6.9
+Stable tag: 1.1.8
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -41,6 +41,10 @@ For any questions, error reports and suggestions please visit https://mekshq.com
 
 == Changelog ==
 
+
+= 1.1.8 =
+* WP 6.9+ compatibility tested
+* PHP 8.2+ compatibility test
 
 = 1.1.7 =
 * WP 6.3 compatibility tested

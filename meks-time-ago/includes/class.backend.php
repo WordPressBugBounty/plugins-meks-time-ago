@@ -91,10 +91,10 @@ class Meks_TA_Admin {
         $checked_modified_date = checked( $active['modified_date'], 1, false );
         $checked_modified_time = checked( $active['modified_time'], 1, false );
 
-        echo "<input type=\"checkbox\" name=\"meks_ta_opts[active][date]\" ${checked_date}>".__( 'Date', 'meks-time-ago' ).'&nbsp;&nbsp;&nbsp;';
-		echo "<input type=\"checkbox\" name=\"meks_ta_opts[active][time]\" ${checked_time}>".__( 'Time', 'meks-time-ago' ).'&nbsp;&nbsp;&nbsp;';
-		echo "<input type=\"checkbox\" name=\"meks_ta_opts[active][modified_date]\" ${checked_modified_date}>".__( 'Date (modified)', 'meks-time-ago' ).'&nbsp;&nbsp;&nbsp;';
-		echo "<input type=\"checkbox\" name=\"meks_ta_opts[active][modified_time]\" ${checked_modified_time}>".__( 'Time (modified)', 'meks-time-ago' );
+        echo "<input type=\"checkbox\" name=\"meks_ta_opts[active][date]\" {$checked_date}>".__( 'Date', 'meks-time-ago' ).'&nbsp;&nbsp;&nbsp;';
+		echo "<input type=\"checkbox\" name=\"meks_ta_opts[active][time]\" {$checked_time}>".__( 'Time', 'meks-time-ago' ).'&nbsp;&nbsp;&nbsp;';
+		echo "<input type=\"checkbox\" name=\"meks_ta_opts[active][modified_date]\" {$checked_modified_date}>".__( 'Date (modified)', 'meks-time-ago' ).'&nbsp;&nbsp;&nbsp;';
+		echo "<input type=\"checkbox\" name=\"meks_ta_opts[active][modified_time]\" {$checked_modified_time}>".__( 'Time (modified)', 'meks-time-ago' );
 	}
 
 	/**
@@ -133,7 +133,7 @@ class Meks_TA_Admin {
 		$minutes = $hours = $days = $months = '';
 		$$type = 'selected';
 
-		echo "<input type=\"number\" name=\"meks_ta_opts[time][number]\" value=\"${time}\" class=\"small-text\" style=\"height: 28px; vertical-align: top;\">";
+		echo "<input type=\"number\" name=\"meks_ta_opts[time][number]\" value=\"{$time}\" class=\"small-text\" style=\"height: 28px; vertical-align: top;\">";
 		echo sprintf( '<select name="meks_ta_opts[time][type]"><option value="minutes" %1$s>%2$s</option><option value="hours" %3$s>%4$s</option><option value="days" %5$s>%6$s</option><option value="months" %7$s>%8$s</option>',
 			$minutes,
 			__( 'Minutes', 'meks-time-ago' ),
